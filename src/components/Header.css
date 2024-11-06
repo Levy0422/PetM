@@ -1,0 +1,119 @@
+/* Reset de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Barra superior blanca con el logo a la izquierda y el icono de iniciar sesión a la derecha */
+.logo-bar {
+  background-color: white;
+  padding: 10px 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8501b;
+}
+
+.logo-bar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-bar .logo img {
+  height: 110px;
+}
+
+.logo-bar h1 {
+  margin-left: 10px;
+  color: #e8501b;
+}
+
+/* Icono de iniciar sesión alineado a la derecha */
+.login-icon {
+  margin-right: 120px;
+}
+
+.login-icon img {
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Barra de navegación extendida */
+.navbar {
+  background-color: #e8501b;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/* Hover para resaltar botones en la barra de navegación */
+.navbar ul li a:hover {
+  background-color: #ff7d4a;
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f5f5f5; /* Fondo gris suave */
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: auto;
+  min-width: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para los botones dentro del menú "Apoyar" */
+.dropdown-button {
+  color: #555; /* Texto en gris oscuro */
+  background-color: #f5f5f5; /* Fondo gris suave, igual que el menú desplegable */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 0; /* Ajuste para separación entre botones */
+  transition: color 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Efecto hover en los botones del menú desplegable */
+.dropdown-button:hover {
+  color: #e8501b; /* Sombreado naranja en hover */
+}
