@@ -14,9 +14,9 @@ const Header = () => {
           <h1>PetMatch</h1>
         </div>
         <div className="login-icon">
-          {/* Enlace a la ruta /script para iniciar sesión */}
-          <Link to="/script">
-            <img src="login-icon.png" alt="Iniciar Sesión" />
+          {/* Enlace al login */}
+          <Link to="/login">
+            <img src="login-icon.svg" alt="Iniciar Sesión" />
           </Link>
         </div>
       </div>

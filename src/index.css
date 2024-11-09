@@ -16,3 +16,27 @@ nav ul li a:hover {
   background-color: dodgerblue;
   color: white;
 }
+/* Asegúrate de que el body y el root ocupen toda la altura */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Configuración del contenedor principal de la aplicación */
+.App {
+  min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegura que el contenido pueda desplazarse hacia abajo si es más grande que la pantalla */
+main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+body {
+  background-color: transparent;
+}

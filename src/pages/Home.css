@@ -1,0 +1,259 @@
+/* Configuración general para permitir scroll global */
+html, body, .home-page {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Solo evita el scroll horizontal */
+  }
+  
+  /* Contenedor principal de Home */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    position: relative;
+    width: 100vw;
+    min-height: 600vh; /* Mantiene la extensión de la página */
+    box-sizing: border-box;
+  }
+  
+  /* Información de adopción */
+  .adopt-info {
+    text-align: left;
+    max-width: 500px;
+    position: absolute;
+    top: 5%; /* Sube la sección de texto y botón un 100% hacia arriba */
+    left: 10%;
+    z-index: 2;
+  }
+  
+  .adopt-info h1 {
+    color: #e8501b;
+    font-size: 3.375rem;
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+  }
+  
+  .adopt-info p {
+    color: #333;
+    font-size: 1.35rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .adopt-info button {
+    background-color: #e8501b;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.35rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .adopt-info button:hover {
+    background-color: #ff7d4a;
+  }
+  
+  /* Contenedor de la imagen del perro y gato */
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: -2rem;
+    margin-left: 5%;
+    z-index: 1;
+  }
+  
+  .animal-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  /* Imagen del borde sobre la parte inferior de la imagen principal */
+  .border-image {
+    position: absolute;
+    bottom: -330px; /* Baja la posición de la imagen en un 35% adicional */
+    left: -10%;
+    width: 160%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Sección de estadísticas de adopción */
+  .adopt-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: transparent;
+    position: relative;
+    margin-top: -2rem;
+    z-index: 2;
+    color: #e8501b;
+  }
+  
+  .stat-item {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  .stat-item h2 {
+    font-size: 4rem;
+    color: #e8501b;
+    margin: 0;
+  }
+  
+  .stat-item p {
+    color: #e8501b;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Estilos para la sección de historias */
+  .stories-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    margin-top: 50vh; /* Baja la sección de historias en un 50% total */
+  }
+  
+  .story {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .story-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #e8501b;
+    margin-bottom: 1rem;
+  }
+  
+  .story h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .story p {
+    font-size: 1rem;
+    color: #666;
+  }
+/* Estilos para la sección de proceso de adopción */
+.adoption-process-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f26d3d; /* Color de fondo */
+    padding: 8rem 2rem;
+    margin-top: 2rem;
+    color: #fff;
+    width: 110%; /* Aumenta la anchura del recuadro en un 10% */
+    margin-left: -5%; /* Centra la sección al extenderla más allá del viewport */
+    box-sizing: border-box;
+  }
+  
+  .adoption-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra la imagen dentro del contenedor */
+  }
+  
+  .adoption-image img {
+    width: 100%; /* Ajusta el tamaño de la imagen */
+    max-width: 450px; /* Tamaño máximo para controlar el tamaño */
+    border-radius: 20px;
+  }
+  
+  .adoption-content {
+    flex: 2;
+    max-width: 500px;
+    text-align: left;
+    margin-right: 2rem; /* Asegura un espacio entre el texto y el borde del recuadro */
+    padding-left: 2rem; /* Ajusta el padding para mantener el texto bien ubicado */
+  }
+  
+  .adoption-content h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  .adoption-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  /* Estilos para la sección de beneficios de adopción */
+.adoption-benefits-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .adoption-benefits-content {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .adoption-benefits-content h2 {
+    font-size: 2rem;
+    color: #f26d3d; /* Color de título */
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 1rem;
+  }
+  
+  .adoption-benefits-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .adoption-benefits-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  
+  .adoption-benefits-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+  }
+  
+  
