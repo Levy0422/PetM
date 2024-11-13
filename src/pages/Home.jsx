@@ -63,7 +63,7 @@ const Home = () => {
         {/* Sección: Proceso de adopción */}
         <div className="adoption-process-section">
           <div className="adoption-image">
-            <img src="/adoption-image.png" alt="Proceso de Adopción" />
+            <img src="/adoption-image.png-" alt="Proceso de Adopción" />
           </div>
           <div className="adoption-content">
             <h2>¿Cómo funciona el proceso de adopción?</h2>

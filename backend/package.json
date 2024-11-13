@@ -1,0 +1,15 @@
+{
+    "name": "petmatch-backend",
+    "version": "1.0.0",
+    "description": "Backend para la aplicación PetMatch",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "mysql2": "^2.2.5",
+      "dotenv": "^10.0.0"
+    }
+  }
+  

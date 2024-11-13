@@ -1,0 +1,125 @@
+/* Sección de fondo principal */
+.about-background {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('/path/to/dogBackground.jpg'); /* Ruta de la imagen de fondo de perros */
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 2rem;
+    margin-bottom: 2rem;
+    min-height: 60vh; /* Asegura que ocupe suficiente espacio en la pantalla */
+  }
+  
+  /* Sección de Sobre Nosotros */
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem auto; /* Asegura espacio entre secciones */
+    color: #333;
+    min-height: 50vh; /* Asegura que ocupe suficiente espacio */
+  }
+  
+  .about-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #f26d3d;
+    padding: 1rem;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .about-text h2 {
+    color: #f26d3d;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Primera sección de conexión */
+  .connection-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    color: #333;
+    min-height: 40vh; /* Asegura espacio para mostrar contenido */
+  }
+  
+  .connection-text h2 {
+    color: #f26d3d;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .connection-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .connection-text .highlight {
+    color: #f26d3d;
+    font-weight: bold;
+  }
+  
+  .connection-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #f26d3d;
+    padding: 1rem;
+  }
+  
+  /* Segunda sección de conexión con imagen grande */
+  .connection-section-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    color: #333;
+    min-height: 50vh; /* Asegura espacio para mostrar contenido */
+  }
+  
+  .connection-text-bottom h2 {
+    color: #f26d3d;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .connection-text-bottom p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .connection-text-bottom .highlight {
+    color: #f26d3d;
+    font-weight: bold;
+  }
+  
+  .connection-image-large img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 1rem;
+  }
+  
